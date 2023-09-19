@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        contrast: 'var(--contrast)',
-        accent: 'var(--accent)',
+        primary: 'linear-gradient(#903AFF 100%, #FE34B9 100%)',
+        secondary: '#150E28',
+        contrast: '#903AFF',
+        accent: '#D434FE'
       },
       screens: {
         mobile: '0px',
