@@ -1,0 +1,20 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.root, 
+#root {
+  --primary: #150E28;
+  --secondary: linear-gradient(#903AFF 100%, #FE34B9 100%);
+  --contrast:  #903AFF;
+  --accent: #D434FE;
+}
+
+.required{
+  @apply text-red-500 text-xs italic;
+}
