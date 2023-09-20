@@ -12,6 +12,11 @@ module.exports = {
         contrast: '#903AFF',
         accent: '#D434FE'
       },
+      fontFamily: {
+        'montserrat': ['Montserrat'],
+        'lato': ['Lato'],
+        'garamond': ['Garamond']
+      },
       screens: {
         mobile: '0px',
         // => @media () { ... }
