@@ -10,7 +10,8 @@ module.exports = {
         primary: 'linear-gradient(#903AFF 100%, #FE34B9 100%)',
         secondary: '#150E28',
         contrast: '#903AFF',
-        accent: '#D434FE'
+        accent: '#D434FE',
+        'purplemain' : '#150E28'
       },
       screens: {
         mobile: '0px',
