@@ -1,16 +1,31 @@
 import NavBar from "@/components/navbar";
-import {RiTwitterXLine , RiInstagramLine, } from "react-icons/ri"
-import {BiLogoFacebook, BiLogoLinkedin} from "react-icons/bi"
-import { IoIosArrowBack, IoIosArrowDown } from "react-icons/io"
+import { IoIosArrowDown } from "react-icons/io"
 import { PiStarFourFill } from "react-icons/pi"
 import Image from "next/image";
+import { useState } from "react";
+import ConfirmationPopUp from "@/components/confirmation";
 
 
-const registerPage =()=> {
+const RegisterPage =()=> {
+
+    const [showModal , setShowModal] = useState(false);
+
+    const toggleModal =(e)=> {
+
+        e.preventDefault();
+
+        setShowModal (prevState => !prevState);
+        
+    }
+
+    const overflow = showModal? "overflow:visible" : "overflow:hidden"
+
+
    return ( 
 
         <>
-            <div className= " w-full lg:h-[100vh] bg-[url('/Contact.svg')] bg-cover">
+            
+            <div className= {`w-full lg:h-[100vh] bg-[url('/Contact.svg')] bg-cover overflow-hidden`}>
                 <div className="hidden lg:flex"><NavBar/></div>
             
                 <div className="hidden lg:flex h-[94px]"/>
@@ -128,24 +143,24 @@ const registerPage =()=> {
                                         <div className="text-white font-montserrat font-normal text-sm">I agree with the event terms and conditions and privacy policy</div>
                                     </div>
 
-                                        <button className="hidden lg:flex self-center justify-center w-full py-6 rounded-s bg-gradient-to-r from-[#FE34B9] via-[#D434FE] to-[#903AFF] text-base font-montserrat font-normal text-white">
+                                        <button onClick={toggleModal} 
+                                            className="hidden lg:flex self-center justify-center w-full py-6 rounded-s bg-gradient-to-r from-[#FE34B9] via-[#D434FE] to-[#903AFF] text-base font-montserrat font-normal text-white">
                                             Register your account
                                         </button>
-                                        <button className="flex lg:hidden self-center justify-center w-[172px] py-6 rounded-s bg-gradient-to-r from-[#FE34B9] via-[#D434FE] to-[#903AFF] text-base font-montserrat font-normal text-white">
+                                        <button onClick={toggleModal}
+                                            className="flex lg:hidden self-center justify-center w-[172px] py-6 rounded-s bg-gradient-to-r from-[#FE34B9] via-[#D434FE] to-[#903AFF] text-base font-montserrat font-normal text-white">
                                             Submit
                                         </button>
-                                    
                                 </form>
                             </div>
                         </div>
 
                     </div>
                 </div>
-
-
             </div>
+                    <ConfirmationPopUp isVisible={showModal} onClose={toggleModal} />
         </>
    )
 }
 
-export default registerPage;
+export default RegisterPage;
