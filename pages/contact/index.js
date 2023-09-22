@@ -77,6 +77,7 @@ const contactPage = ()=> {
                     </div>
                 </div>
 
+                {/*Mobile*/}
                 <div className="flex relative lg:hidden flex-col justify-center items-center">
 
                         <div className="absolute flex inset-y-0 top-[15%]  w-fit h-fit"><PiStarFourFill className=" text-base text-accent"/></div>
@@ -86,8 +87,8 @@ const contactPage = ()=> {
 
                         <div className="flex flex-col w-full px-14 py-12">
 
-                            <div className="flex my-12 lg:hidden w-[23px] h-[23px] items-center justify-center border border-primary rounded-full">
-                                <IoIosArrowBack className="self-center text-white"/>
+                            <div className="flex my-12 lg:hidden w-[25px] h-[25px] items-center justify-center border border-t-[#903AFF] border-l-[#5d3f6c] border-r-[#FE34B9] border-b-[#FF26B9] rounded-full">
+                                <IoIosArrowBack className="self-center text-white font-semibold"/>
                             </div>
                             
                             <div className="flex flex-col gap-8">
