@@ -352,6 +352,20 @@ export default function Home() {
         
       </div>
 
+      <div className='border-b   border-[#4A2672]' />
+
+      <div  className=" w-auto h-auto lg:bg-[url('/bg.png')] bg-[url('/bg.png')] leading-[23px]  bg-cover">
+
+        <div className=' flex items-center flex-col text-white'>
+
+        <p>Timeline</p>
+        <p>Here is the breakdown of the time we anticipate using for the upcoming event.</p>
+
+        </div>
+        <div>@media only screen and </div>
+        
+      </div>
+
     </>
   )
 }
