@@ -11,13 +11,22 @@ module.exports = {
         secondary: '#150E28',
         contrast: '#903AFF',
         accent: '#D434FE',
-        'purplemain' : '#150E28'
       },
       fontFamily: {
         'montserrat': ['Montserrat'],
         'lato': ['Lato'],
-        'garamond': ['Garamond']
+        'garamond': ['Garamond'],
+        'clash-display':['Familjen Grotesk', 'sans-serif'],
       },
+
+      fontSize: {
+        '3.5xl': '32px'
+      },
+
+      borderRadius: {
+        's': '4px'
+      },
+
       screens: {
         mobile: '0px',
         // => @media () { ... }
