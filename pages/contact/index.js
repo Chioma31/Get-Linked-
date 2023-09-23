@@ -16,10 +16,10 @@ const contactPage = ()=> {
                 
                 <div className="hidden lg:flex h-[94px]"/>
 
-                        <div className="absolute hidden lg:flex inset-y-0 top-[15%] left-[8%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-3xl text-accent"/></div>
-                        <div className="absolute hidden lg:flex inset-y-0 top-[15%] left-[84%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-2xl text-gray-400"/></div>
-                        <div className="absolute hidden lg:flex inset-x-0 top-[60%] left-[54.2%] opacity-75 w-fit h-fit"><PiStarFourFill className=" text-4xl text-accent"/></div>
-                        <div className="absolute hidden lg:flex inset-x-0 top-[75%] left-[90%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-3xl text-white"/></div>
+                        <div className="absolute animate-pulse hidden lg:flex inset-y-0 top-[15%] left-[8%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-3xl text-accent"/></div>
+                        <div className="absolute animate-pulse hidden lg:flex inset-y-0 top-[15%] left-[84%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-2xl text-gray-400"/></div>
+                        <div className="absolute animate-pulse hidden lg:flex inset-x-0 top-[60%] left-[54.2%] opacity-75 w-fit h-fit"><PiStarFourFill className=" text-4xl text-accent"/></div>
+                        <div className="absolute animate-pulse hidden lg:flex inset-x-0 top-[75%] left-[90%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-3xl text-white"/></div>
 
                 <div className="hidden lg:flex w-full lg:px-40 mt-20 ">
                     
@@ -80,10 +80,10 @@ const contactPage = ()=> {
                 {/*Mobile*/}
                 <div className="flex relative lg:hidden flex-col justify-center items-center">
 
-                        <div className="absolute flex inset-y-0 top-[15%]  w-fit h-fit"><PiStarFourFill className=" text-base text-accent"/></div>
-                        <div className="absolute flex inset-y-0 top-[20%] left-[84%] w-fit h-fit"><PiStarFourFill className=" text-base text-gray-400"/></div>
-                        <div className="absolute flex inset-x-0 top-[82%] left-[9%] w-fit h-fit"><PiStarFourFill className=" text-base text-accent"/></div>
-                        <div className="absolute flex inset-x-0 top-[75%] left-[90%] w-fit h-fit"><PiStarFourFill className=" text-base text-white"/></div>
+                        <div className="absolute animate-pulse flex inset-y-0 top-[15%]  w-fit h-fit"><PiStarFourFill className=" text-base text-accent"/></div>
+                        <div className="absolute animate-pulse flex inset-y-0 top-[20%] left-[84%] w-fit h-fit"><PiStarFourFill className=" text-base text-gray-400"/></div>
+                        <div className="absolute animate-pulse flex inset-x-0 top-[82%] left-[9%] w-fit h-fit"><PiStarFourFill className=" text-base text-accent"/></div>
+                        <div className="absolute animate-pulse flex inset-x-0 top-[75%] left-[90%] w-fit h-fit"><PiStarFourFill className=" text-base text-white"/></div>
 
                         <div className="flex flex-col w-full px-14 py-12">
 

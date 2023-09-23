@@ -18,23 +18,21 @@ const RegisterPage =()=> {
         
     }
 
-    const overflow = showModal? "overflow:visible" : "overflow:hidden"
+    const overflow = showModal? "documents.body.style.overflow:hidden" : "documents.body.style.overflow:auto"
 
 
-   return ( 
-
-        <>
+   return (    
             
-            <div className= {`w-full lg:h-[100vh] bg-[url('/Contact.svg')] bg-cover overflow-hidden`}>
+            <div className= {`w-full bg-[url('/Contact.svg')] bg-cover` }>
                 <div className="hidden lg:flex"><NavBar/></div>
             
                 <div className="hidden lg:flex h-[94px]"/>
 
-                    <div className="absolute flex inset-y-0 top-[26%] left-[90%] lg:top-[18%] lg:left-[8%] opacity-75 w-fit h-fit"><PiStarFourFill className=" lg:text-3xl text-accent"/></div>
-                    <div className="absolute flex inset-y-0 top-[70%] left-[80%]lg:top-[25%] lg:left-[80%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-lg lg:text-2xl text-white opacity-50"/></div>
-                    <div className="absolute flex inset-x-0  top-[90%] left-[95%] lg:top-[70%] lg:left-[40%] opacity-75 w-fit h-fit"><PiStarFourFill className=" lg:text-4xl text-accent"/></div>
-                    <div className="absolute hidden lg:flex inset-x-0 lg:top-[94%] lg:left-[85%] opacity-100 w-fit h-fit"><PiStarFourFill className=" text-xl text-white"/></div>
-                    <div className="absolute hidden lg:flex inset-x-0 lg:top-[73%] lg:left-[10%] opacity-75 w-fit h-fit"><PiStarFourFill className=" text-xl text-white"/></div>
+                    <div className="absolute animate-pulse flex inset-y-0 top-[26%] left-[90%] lg:top-[18%] lg:left-[8%] opacity-75 w-fit h-fit"><PiStarFourFill className=" lg:text-3xl text-accent"/></div>
+                    <div className="absolute animate-pulse flex inset-y-0 top-[70%] left-[80%]lg:top-[25%] lg:left-[80%] opacity-50 w-fit h-fit"><PiStarFourFill className=" text-lg lg:text-2xl text-white opacity-50"/></div>
+                    <div className="absolute animate-pulse flex inset-x-0  top-[90%] left-[95%] lg:top-[70%] lg:left-[40%] opacity-75 w-fit h-fit"><PiStarFourFill className=" lg:text-4xl text-accent"/></div>
+                    <div className="absolute animate-pulse hidden lg:flex inset-x-0 lg:top-[94%] lg:left-[85%] opacity-100 w-fit h-fit"><PiStarFourFill className=" text-xl text-white"/></div>
+                    <div className="absolute animate-pulse hidden lg:flex inset-x-0 lg:top-[73%] lg:left-[10%] opacity-75 w-fit h-fit"><PiStarFourFill className=" text-xl text-white"/></div>
 
                 
                 <div className="flex flex-col lg:flex lg:flex-row w-full px-8 py-8 lg:px-20 lg:mt-20 ">
@@ -157,9 +155,8 @@ const RegisterPage =()=> {
 
                     </div>
                 </div>
+                <ConfirmationPopUp isVisible={showModal} onClose={toggleModal} />
             </div>
-                    <ConfirmationPopUp isVisible={showModal} onClose={toggleModal} />
-        </>
    )
 }
 
